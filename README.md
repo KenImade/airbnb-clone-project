@@ -23,3 +23,10 @@ This project is a clone of the popular short-let booking website AirBnb. It is d
 - **Redis** — caching and session store.  
 - **Docker** — containerization.  
 - **CI/CD Pipelines** — automated tests & deployments.
+
+## Team Roles
+
+- Backend Developer: Responsible for designing and building the various API endpoints, buisiness logic, and database models in the project.
+- Database Administrator: Responsible for designing, indexing, and performance of the database.
+- DevOps Engineer: Responsible for designing and implementing the CI/CD process of the project.
+- QA Engineer: Responsible for the individual and wholistic testing of the developed system, ensuring it meets the expected quality of the client.
