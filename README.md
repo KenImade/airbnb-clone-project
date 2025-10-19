@@ -97,3 +97,20 @@ This project is a clone of the popular short-let booking website AirBnb. It is d
 | date of transaction | date when transaction took place |
 | customer_id        | customer who created the transaction |
 | booking_id    | booking transaction is related to. |
+
+## Feature Breakdown
+
+### User Management
+
+- **Endpoints:** `/users/`, `/users/{user_id}/`  
+- **Features:** Register, authenticate, and manage user profiles.
+
+### Property Management
+
+- **Endpoints:** `/properties/`, `/properties/{property_id}/`  
+- **Features:** Create, update, retrieve, and delete property listings.
+
+### Booking System
+
+- **Endpoints:** `/bookings/`, `/bookings/{booking_id}/`  
+- **Features:** Make, update, and manage bookings, including check-in and check-out details.
