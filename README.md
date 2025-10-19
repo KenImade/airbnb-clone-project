@@ -114,3 +114,34 @@ This project is a clone of the popular short-let booking website AirBnb. It is d
 
 - **Endpoints:** `/bookings/`, `/bookings/{booking_id}/`  
 - **Features:** Make, update, and manage bookings, including check-in and check-out details.
+
+## API Security
+
+Ensuring the security of our API is a top priority. The following measures are implemented to protect user data, maintain system integrity, and prevent unauthorized access.
+
+### Key Security Measures
+
+| Security Measure | Description | Purpose |
+|------------------|-------------|----------|
+| **Authentication** | All API endpoints require valid authentication tokens (e.g., JWT or OAuth 2.0). | Ensures that only verified users and systems can access the API. |
+| **Authorization** | Role-based access control (RBAC) defines what actions users can perform. | Prevents unauthorized users from accessing restricted resources. |
+| **Rate Limiting** | Limits the number of requests per user/IP in a given time period. | Protects against abuse, denial-of-service (DoS) attacks, and API overload. |
+| **Input Validation & Sanitization** | All incoming data is validated and sanitized before processing. | Prevents injection attacks and data corruption. |
+| **Encryption (HTTPS & Data-at-Rest)** | All communication occurs over HTTPS; sensitive data is encrypted in storage. | Protects user credentials and sensitive information from interception. |
+| **Logging & Monitoring** | API activity is logged and monitored for suspicious behavior. | Enables early detection of potential security threats. |
+
+---
+
+### 🧠 Why Security Is Crucial
+
+- **Protecting User Data:**  
+  Sensitive information such as personal details, emails, and passwords must be protected from unauthorized access and data breaches.
+
+- **Securing Payments:**  
+  If financial transactions are involved, proper encryption and authentication prevent fraud and ensure trust between users and the system.
+
+- **Maintaining System Integrity:**  
+  Security controls like rate limiting and input validation prevent malicious users from exploiting vulnerabilities or overloading the system.
+
+- **Compliance with Regulations:**  
+  Following best security practices helps meet data protection regulations (e.g., GDPR, CCPA), reducing legal and reputational risks.
