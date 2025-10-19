@@ -40,3 +40,60 @@ This project is a clone of the popular short-let booking website AirBnb. It is d
 - Redis: Database management system for caching and session storage.
 - Docker: Containerization system for easy deployment.
 - CI/CD Pipelines: For automated testing and deployment of the application.
+
+## Database Design
+
+### Users
+
+| Entity Name | Description |
+| ----------- | ----------- |
+| id          | primary key of user |
+| firstname   | user first name |
+| lastname    | user last name |
+| date of birth | user date of birth |
+| email        | user personal email address |
+| password    | user password |
+
+### Properties
+
+| Entity Name | Description |
+| ----------- | ----------- |
+| id          | primary key of property |
+| address   | property address |
+| postcode    | property postcode |
+| number_of_bedrooms  | number of bedrooms in the property |
+| number of bathrooms        | number of bathrooms in the property |
+| property_type    | Type of property e.g. studio, maisonette, semi-detached, etc. |
+
+### Bookings
+
+| Entity Name | Description |
+| ----------- | ----------- |
+| id          | primary key of booking |
+| owner   | id of user who booked the property |
+| start_date    | Date that booking will begin |
+| end_date | Date when booking will end |
+| price        | Price paid for booking |
+| booking_date    | Date when booking was created |
+
+### Reviews
+
+| Entity Name | Description |
+| ----------- | ----------- |
+| id          | primary key of review |
+| customer_id   | id of customer who wrote review |
+| property_id    | id of propert which received review |
+| cleanliness | 1 to 5 rating of how clean the property was. |
+| owner_responsiveness        | 1 to 5 rating of how responsive the property owner was to resolving concerns |
+| review_date    | Date when review was created. |
+
+### Payments
+
+| Entity Name | Description |
+| ----------- | ----------- |
+| id          | primary key of payment |
+| transaction_id   | unique transaction id |
+| transaction type    | ENUM (Completed, Failed, Refund, Partial-Refund, etc.) |
+| date of transaction | date when transaction took place |
+| customer_id        | customer who created the transaction |
+| booking_id    | booking transaction is related to. |
