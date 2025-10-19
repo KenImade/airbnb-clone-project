@@ -145,3 +145,29 @@ Ensuring the security of our API is a top priority. The following measures are i
 
 - **Compliance with Regulations:**  
   Following best security practices helps meet data protection regulations (e.g., GDPR, CCPA), reducing legal and reputational risks.
+
+## CI/CD Pipeline
+
+### What is a CI/CD Pipeline?
+
+A **CI/CD (Continuous Integration and Continuous Deployment)** pipeline automates the process of integrating code changes, testing, and deploying applications. It ensures that new features or bug fixes are continuously tested and delivered to production with minimal manual intervention.
+
+### Why It’s Important
+
+Implementing a CI/CD pipeline helps maintain code quality, speed up development, and reduce human error. Key benefits include:
+
+- **Faster Development Cycles:** Automates building, testing, and deployment processes.
+- **Early Bug Detection:** Continuous testing helps identify issues before they reach production.
+- **Consistent Deployments:** Ensures the same deployment process is used across all environments.
+- **Improved Collaboration:** Allows developers to integrate their work frequently and confidently.
+- **Higher Reliability:** Reduces downtime and deployment-related issues.
+
+### Tools Commonly Used
+
+| Tool | Purpose |
+|------|----------|
+| **GitHub Actions** | Automates CI/CD workflows directly within GitHub. |
+| **Docker** | Packages applications into containers for consistent deployment. |
+| **Jenkins** | Open-source automation server for managing CI/CD pipelines. |
+| **CircleCI** | Cloud-based CI/CD service for automating builds and tests. |
+| **Kubernetes** | Orchestrates containerized applications for scalable deployment. |
