@@ -79,6 +79,7 @@ erDiagram
     User ||--o{ Booking : makes
     User ||--o{ Review : writes
     User ||--o{ Message : sends
+    User ||--o{ Message : receives
     Property ||--o{ Booking : has
     Property ||--o{ Review : receives
     Booking ||--o{ Payment : includes
