@@ -75,15 +75,17 @@ erDiagram
         TIMESTAMP sent_at "DEFAULT CURRENT_TIMESTAMP"
     }
 
-    User }o--|| Role : has
-    Property }o--|| User: has
-    Booking }o--|| Status: has
-    Booking }o--|| Property: has
-    Booking }o--|| User: has
-    Payment }o--|| PaymentMethod: has
-    Review }o--|| Property: has
-    Review }o--|| User: has
-    Message }o--|| User: has
+    User ||--o{ Property : hosts
+    User ||--o{ Booking : makes
+    User ||--o{ Review : writes
+    User ||--o{ Message : sends
+    Property ||--o{ Booking : has
+    Property ||--o{ Review : receives
+    Booking ||--o{ Payment : includes
+    Booking ||--|| Status : has
+    Payment ||--|| PaymentMethod : uses
+    User ||--|| Role : has
+
 
 
 ```
